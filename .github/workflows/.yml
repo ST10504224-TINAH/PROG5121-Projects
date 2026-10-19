@@ -1,0 +1,26 @@
+name: Java 
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    # Points Maven to the pom.xml inside your Assignment1 directory
+    - name: Build and run tests
+      run: mvn -f Assignment1/pom.xml clean test
