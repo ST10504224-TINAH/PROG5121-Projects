@@ -21,6 +21,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    # Points Maven to the pom.xml inside your Assignment1 directory
     - name: Build and run tests
       run: mvn -f Assignment1/pom.xml clean test
