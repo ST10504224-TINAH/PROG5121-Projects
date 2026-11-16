@@ -36,9 +36,8 @@ String Phonenumber = JOptionPane.showInputDialog(null, "Enter your phone number"
         }else {
            JOptionPane.showMessageDialog(null, "Cell phone number incorrectly formatted or does does not contain +27 international code.");
         }
- // Show welcome message with user first name and last name.         
-        JOptionPane.showMessageDialog(null, "Welcome, it is great to see you.");
-      
+ 
        // System.out.println("Hello World!");
     }
 }
+

@@ -34,7 +34,7 @@ public class Part_2 {
 // User has a choice to choose between 3 options.
                 int option;
                 option = 0;
-                while (option != 3) {
+                while (option != 4) {
                     System.out.println("Choose option");
                     System.out.println("1 - Send Messages"); // user can only write 250 words.
                     System.out.println("2 - Show recently sent messages"); // show previous messages
@@ -70,7 +70,7 @@ public class Part_2 {
                                     }
                                     case 2 -> {
                                         System.out.println("Press 0 to delete the message");
-                                        System.out.print("Confirm");
+                                        System.out.print("Confirm: ");
                                         int confirm = input.nextInt();
                                         if (confirm == 0) {
                                             System.out.println("Message deleted."); //Show message deleted.
